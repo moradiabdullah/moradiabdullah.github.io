@@ -1,1 +1,60 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top Bar */
+.top-bar, .footer-bar {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    top: 0;
+}
+
+.footer-bar {
+    bottom: 0;
+}
+
+nav a, .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover, .social-icons a:hover {
+    color: #007bff;
+}
+
+/* Main Content */
+main {
+    padding: 80px 20px 60px; /* Space for fixed top and bottom bars */
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+}
