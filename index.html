@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
 </head>
 <body>
-    <header class="top-bar">
-        <div class="logo">Your Name</div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="social-icons">
-            <a href="#linkedin">LinkedIn</a>
-            <a href="#email">Email</a>
-            <a href="#github">GitHub</a>
-        </div>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Brief introduction about skills and experience.</p>
-        </section>
-        
-        <section id="projects">
+    <div class="container">
+        <!-- Left Column (Personal Info) -->
+        <aside class="sidebar">
+            <img src="assets/images/profile.jpg" alt="Profile Picture">
+            <h1>Your Name</h1>
+            <p>Data Enthusiast | Problem Solver | Storyteller</p>
+            <ul class="social-links">
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="mailto:your.email@example.com">Email Me</a></li>
+            </ul>
+            <h3>Skills</h3>
+            <div class="skills">
+                <span>SQL</span> <span>Python</span> <span>Power BI</span>
+            </div>
+        </aside>
+
+        <!-- Right Column (Projects) -->
+        <main class="content">
             <h2>Projects</h2>
             <div class="project">
-                <h3>DAATLAB File Data Analysis Dashboard</h3>
-                <img src="assets/images/daatlab-placeholder.png" alt="DAATLAB Project Screenshot">
-                <p>In oktober 2024 kreeg ik voor mijn DAATLAB studie de opdracht om op basis van filedata een dashboard te maken in Power BI.</p>
+                <img src="assets/images/project1.jpg" alt="Project Image">
+                <h3>Project Title</h3>
+                <p>Short description of the project.</p>
+                <a href="projects.html#project1">Read more →</a>
             </div>
-        </section>
-    </main>
-    
-    <footer class="footer-bar">
-        <a href="#top">Back to Top</a>
-        <div class="social-icons">
-            <a href="#linkedin">LinkedIn</a>
-            <a href="#email">Email</a>
-            <a href="#github">GitHub</a>
-        </div>
-    </footer>
+            <div class="project">
+                <img src="assets/images/project2.jpg" alt="Project Image">
+                <h3>Another Project</h3>
+                <p>Short description of the project.</p>
+                <a href="projects.html#project2">Read more →</a>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
