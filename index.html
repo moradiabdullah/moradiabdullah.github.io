@@ -3,79 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Alexander Marks - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <!-- Left Column (Personal Info) -->
-        <aside class="sidebar">
-            <h1>Abdullah Moradi</h1>
-            <p>Data Enthusiast | Problem Solver | Storyteller</p>
-            <ul class="social-links">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="mailto:your.email@example.com">Email Me</a></li>
-            </ul>
-            <h3>Skills</h3>
-            <div class="skills">
-                <span>SQL</span> <span>Python</span> <span>Power BI</span>
-            </div>
-        </aside>
+        <div class="layout">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <header class="profile">
+                    <h1>Abdullah Moradi</h1>
+                    <p class="title">Data Analyst</p>
+                    <p class="location">Zwolle, Nederland</p>
+                    <div class="social-links">
+                        <a href="mailto:your.email@example.com" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="m22 4-10 8L2 4"/>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="social-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </header>
 
-        <!-- Right Column (Projects) -->
-        <main class="content">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <img src="assets/images/deco-1.png" alt="Project Image">
-                    <h3>dashboard nederlands files</h3>
-                    <p>Predicting Airbnb prices in Milan using seasonality, home characteristics, and economic factors.</p>
-                    <div class="tags">
-                        <span>Python</span> <span>SQL</span> <span>Matlab</span>
-                    </div>
-                    <a href="projects.html#project1">Read more →</a>
-                </div>
-                <div class="project">
-                    <img src="assets/images/project2.jpg" alt="Project 2">
-                    <h3>Spotify Visual Data Art</h3>
+                <section class="about">
+                    <h2>Over</h2>
                     <p>
-                        Een dashboard is een visuele weergave van belangrijke metrische gegevens waarmee u uw gegevens snel op één plek kunt bekijken en analyseren. 
-                            Dashboards bieden niet alleen geconsolideerde gegevensweergaven, maar ook een selfservice voor business intelligence, 
-                            waarbij gebruikers de gegevens kunnen filteren om alleen weer te geven wat voor hen belangrijk is. 
+                        Tijdens dit intensieve en leerzame traject heb ik diepgaande kennis en praktische ervaring opgedaan in data-analyse. 
+                        Ik heb mijn vaardigheden in SQL verfijnd en ben bedreven geworden in het gebruik van Power BI om data inzichtelijk te maken en waardevolle rapportages te creëren.
+
                     </p>
-                    <div class="tags">
-                        <span>Python</span> <span>JavaScript</span> <span>SQL</span>
-                    </div>
-                    <a href="projects.html#project2">Read more →</a>
+                </section>
+
+                <section class="skills">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>Power Query</li>
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Dax</li>
+                        <li>Excel</li>
+                        <li>Python</li>
+                    </ul>
+                </section>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="content">
+                <!-- Navigation bar - hidden by default, shown on scroll -->
+                <nav class="project-nav" id="topNav">
+                    <a href="#top" class="nav-link">↑ Back to Top</a>
+                </nav>
+
+                <h2 id="top">Projects</h2>
+                <div class="projects-list">
+                    <!-- levensverwachting Project -->
+                    <article class="project-section">
+                        <h3>levensverwachting</h3>
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Power Query</span>
+                            <span>Power BI</span>
+                            <span>Dax</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Als onderdeel van mijn DataFlex traineeship heb ik een Power BI-dashboard ontwikkeld over de levensverwachting van 15 landen tussen 1800-2021. 
+                                Dit fictieve project richt zich op het analyseren van trends, 
+                                het vergelijken van landen en het onderzoeken van de impact van historische gebeurtenissen op de levensverwachting.
+                            </p>
+                            <img src="assets/images/project-1.png" alt="levensverwachting Project" class="project-image">
+                        </div>
+                    </article>
+
+                    <!-- Eindexamen Voortgezet Onderwijs Project -->
+                    <article class="project-section">
+                        <h3>Eindexamen Voortgezet Onderwijs</h3>
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Power Query</span>
+                            <span>Power BI</span>
+                            <span>Dax</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Als onderdeel van mijn DataFlex traineeship heb ik een Power BI-dashboard ontwikkeld over de levensverwachting van 15 landen tussen 1800-2021. 
+                                Dit fictieve project richt zich op het analyseren van trends, 
+                                het vergelijken van landen en het onderzoeken van de impact van historische gebeurtenissen op de levensverwachting.
+                            </p>
+                            <img src="assets/images/project-2.png" alt="Eindexamen Voortgezet Onderwijs Project" class="project-image">
+                        </div>
+                    </article>
                 </div>
-                <div class="project">
-                    <img src="assets/images/deco-1.png" alt="Project Image">
-                    <h3>Sales Forecasting Dashboard</h3>
-                    <p>
-                        Zodra uw dashboard is gemaakt, laten we u zien hoe u het met personen kunt delen door een Microsoft-groep te maken. We hebben ook een interactieve 
-                            Excel-werkmap die u kunt downloaden en deze stappen zelf kunt uitvoeren.
-                    </p>
-                    <div class="tags">
-                        <span>Power BI</span> <span>DAX</span> <span>SQL</span>
-                    </div>
-                    <a href="projects.html#project3">Read more →</a>
-                </div>
-                <div class="project">
-                    <img src="assets/images/deco-1.png" alt="Project Image">
-                    <h3>Customer Segmentation</h3>
-                    <p>
-                        Dashboards bieden niet alleen geconsolideerde gegevensweergaven, maar ook een selfservice voor business intelligence, 
-                            waarbij gebruikers de gegevens kunnen filteren om alleen weer te geven wat voor hen belangrijk is. 
-                    </p>
-                    <div class="tags">
-                        <span>Python</span> <span>Machine Learning</span> <span>Tableau</span>
-                    </div>
-                    <a href="projects.html#project4">Read more →</a>
-                </div>
-            </div>
-        </main>
+            </main>
+        </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
