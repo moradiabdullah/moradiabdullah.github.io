@@ -1,60 +1,46 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
 }
 
-/* Top Bar */
-.top-bar, .footer-bar {
-    position: fixed;
-    width: 100%;
-    background: #fff;
-    padding: 15px 20px;
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-}
-
-.top-bar {
-    top: 0;
-}
-
-.footer-bar {
-    bottom: 0;
-}
-
-nav a, .social-icons a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-nav a:hover, .social-icons a:hover {
-    color: #007bff;
-}
-
-/* Main Content */
-main {
-    padding: 80px 20px 60px; /* Space for fixed top and bottom bars */
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
 }
 
-section {
-    margin-bottom: 50px;
+.sidebar {
+    width: 30%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
 }
 
 .project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 600px;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
